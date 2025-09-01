@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Diagnostic Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌐 Network Diagnostic Tool</h1>
+            <p>Test ping and traceroute from multiple locations worldwide</p>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <input type="text" id="targetInput" placeholder="Enter domain or IP (e.g., google.com)" />
+                <div class="button-group">
+                    <button id="pingBtn">🏓 Ping</button>
+                    <button id="tracerouteBtn">🛤️ Traceroute</button>
+                    <button id="bothBtn">🚀 Run Both</button>
+                </div>
+            </div>
+            
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Running network tests...</p>
+            </div>
+            
+            <div class="instructions">
+                <h3>How to use:</h3>
+                <ul>
+                    <li><strong>Ping</strong>: Tests if a server is reachable and measures response time</li>
+                    <li><strong>Traceroute</strong>: Shows the path your data takes to reach the server</li>
+                    <li>Enter a domain like <code>google.com</code> or IP address like <code>8.8.8.8</code></li>
+                    <li>Click a button to test from multiple global locations</li>
+                </ul>
+            </div>
+            
+            <div id="results" class="results-container">
+                <!-- Results will appear here -->
+            </div>
+        </main>
+        
+        <footer>
+            <p>Built with ❤️ | Network diagnostics made simple</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
